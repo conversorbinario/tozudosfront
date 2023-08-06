@@ -1,20 +1,37 @@
+import React from 'react';
+import {SafeAreaView, } from 'react-native-safe-area-context';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View, Text } from 'react-native';
+import { PassInput } from './PassInput.js';
+import { UserNameInput } from './UserNameInput.js';
 
+//http://localhost:3001/
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView style={baseView.container}>
+      <View style={{ flex: 0.5, backgroundColor: '#D2B48C' }}></View>
+      <View style={{ flex: 10 }}>
+        <UserNameInput />
+        <PassInput />
+      </View>
+      <View style={{ flex: 0.5, backgroundColor: '#BFC9A2' }}></View>
+    </SafeAreaView>
   );
 }
 
-const styles = StyleSheet.create({
+const baseView = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    flexDirection: 'column',
+    backgroundColor: '#FFFDD0',
+  
   },
 });
+
+const styles2 = StyleSheet.create({
+  container: {
+    flex: 1,
+    padding: 20,
+  },
+});
+
