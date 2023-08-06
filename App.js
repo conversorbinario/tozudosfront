@@ -24,7 +24,6 @@ const baseView = StyleSheet.create({
     flex: 1,
     flexDirection: 'column',
     backgroundColor: '#FFFDD0',
-  
   },
 });
 
