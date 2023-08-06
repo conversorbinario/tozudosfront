@@ -1,7 +1,6 @@
 import React from 'react';
 import {SafeAreaView, } from 'react-native-safe-area-context';
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import { PassInput } from './PassInput.js';
 import { UserNameInput } from './UserNameInput.js';
 
