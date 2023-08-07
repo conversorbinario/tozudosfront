@@ -1,7 +1,7 @@
 import React from "react";
 import {TextInput, SafeAreaView, StyleSheet } from 'react-native';
 
-export const UserNameInput = () => {
+ const UserNameInput = () => {
     return(<SafeAreaView>
        <TextInput
         style={styles.input}
@@ -20,5 +20,7 @@ const styles = StyleSheet.create({
     padding: 10,
   },
 });
+
+export default UserNameInput;
 
   

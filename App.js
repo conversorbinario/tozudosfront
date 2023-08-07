@@ -1,8 +1,8 @@
 import React from 'react';
-import {SafeAreaView, } from 'react-native-safe-area-context';
+import { SafeAreaView, } from 'react-native-safe-area-context';
 import { StyleSheet, View } from 'react-native';
-import { PassInput } from './src/components/PassInput.js';
-import { UserNameInput } from './src/components/UserNameInput.js';
+import  PassInput  from './src/components/PassInput.js';
+import  UserNameInput from './src/components/UserNameInput.js';
 
 //http://localhost:3001/
 export default function App() {
